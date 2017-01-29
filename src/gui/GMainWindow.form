@@ -164,7 +164,7 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel5">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Super Choreographer! App : a Proof-of-Concept  v. 1.0.0.1"/>
+            <Property name="text" type="java.lang.String" value="Super Choreographer! App : a Proof-of-Concept  v. 1.0.0.2"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel6">

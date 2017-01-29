@@ -79,7 +79,7 @@ public class GMainWindow extends javax.swing.JFrame implements ICommon {
 
         jLabel3.setText("[Left mouse drag] = Move selected Athlete");
 
-        jLabel5.setText("Super Choreographer! App : a Proof-of-Concept  v. 1.0.0.1");
+        jLabel5.setText("Super Choreographer! App : a Proof-of-Concept  v. 1.0.0.2");
 
         jLabel6.setText("Select an Athlete then use the [Spacebar] to record choreography");
 
