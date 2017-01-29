@@ -69,21 +69,21 @@ public class GMainWindow extends javax.swing.JFrame implements ICommon {
 
         getContentPane().add(theMat1);
 
-        jLabel1.setText("[Spacebar] = Record a routine");
+        jLabel1.setText("[Spacebar] = Record a routine / Stop recording");
 
         jLabel2.setText("[p] = Playback a routine");
 
         EventMessager.setText(" ");
 
-        jLabel4.setText("[Left mouse] = Add / Select / Deselect Athlete");
+        jLabel4.setText("[Left mouse] = Add / Select / De-select Athlete");
 
         jLabel3.setText("[Left mouse drag] = Move selected Athlete");
 
-        jLabel5.setText("Super Choreographer! App : a Proof-of-Concept");
+        jLabel5.setText("Super Choreographer! App : a Proof-of-Concept  v. 1.0.0.1");
 
         jLabel6.setText("Select an Athlete then use the [Spacebar] to record choreography");
 
-        jLabel7.setText("with your mouse");
+        jLabel7.setText("by moving your mouse");
 
         jLabel8.setText("Idea By: Andre Mendoza");
 
@@ -98,35 +98,35 @@ public class GMainWindow extends javax.swing.JFrame implements ICommon {
         TimelineLayout.setHorizontalGroup(
             TimelineLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(TimelineLayout.createSequentialGroup()
-                .addContainerGap()
                 .addGroup(TimelineLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(EventMessager)
-                    .addComponent(jLabel2)
-                    .addGroup(TimelineLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addGroup(TimelineLayout.createSequentialGroup()
+                    .addGroup(TimelineLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(TimelineLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(EventMessager)
+                            .addComponent(jLabel2)
                             .addComponent(jLabel4)
-                            .addContainerGap(215, Short.MAX_VALUE))
-                        .addGroup(TimelineLayout.createSequentialGroup()
-                            .addGroup(TimelineLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jLabel3)
-                                .addComponent(jLabel1))
-                            .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))))
-            .addGroup(TimelineLayout.createSequentialGroup()
-                .addGap(48, 48, 48)
-                .addComponent(jLabel6))
-            .addGroup(TimelineLayout.createSequentialGroup()
-                .addGap(199, 199, 199)
-                .addComponent(jLabel7))
+                            .addComponent(jLabel3)
+                            .addComponent(jLabel1)))
+                    .addGroup(TimelineLayout.createSequentialGroup()
+                        .addGap(48, 48, 48)
+                        .addComponent(jLabel6))
+                    .addGroup(TimelineLayout.createSequentialGroup()
+                        .addGap(199, 199, 199)
+                        .addComponent(jLabel7)))
+                .addContainerGap(120, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, TimelineLayout.createSequentialGroup()
-                .addContainerGap(191, Short.MAX_VALUE)
-                .addGroup(TimelineLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(TimelineLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jLabel10)
-                        .addComponent(jLabel9)
-                        .addComponent(jLabel11)
-                        .addComponent(jLabel8))
-                    .addComponent(jLabel5))
-                .addGap(19, 19, 19))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(TimelineLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, TimelineLayout.createSequentialGroup()
+                        .addGroup(TimelineLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel10)
+                            .addComponent(jLabel9)
+                            .addComponent(jLabel11)
+                            .addComponent(jLabel8))
+                        .addGap(19, 19, 19))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, TimelineLayout.createSequentialGroup()
+                        .addComponent(jLabel5)
+                        .addGap(41, 41, 41))))
         );
         TimelineLayout.setVerticalGroup(
             TimelineLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -154,7 +154,7 @@ public class GMainWindow extends javax.swing.JFrame implements ICommon {
                 .addComponent(jLabel6)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel7)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 23, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 41, Short.MAX_VALUE)
                 .addComponent(EventMessager)
                 .addContainerGap())
         );

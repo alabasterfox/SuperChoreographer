@@ -138,9 +138,17 @@ System.out.println(msg);
                     if(y1 <= y && y <= y2){
                         collision = true;
                         if(a.IsSelected()){
-                            a.setIsSelected(false);                             // if user clicks on a selected athlete, deselect him/her
+                            // deselect athlete and remove highlight
+                            a.setIsSelected(false);
+                            msg = String.format("Deselected %s", a.getFname());
+                            out.setText(msg);
+                            System.out.println(msg);
                         }else{
+                            // Highlight the athlete as selected
                             a.setIsSelected(true);
+                            msg = String.format("Selected %s", a.getFname());
+                            out.setText(msg);
+                            System.out.println(msg);
                         }
                     }else{
                         a.setIsSelected(false);
@@ -194,10 +202,13 @@ System.out.println(msg);
         this.athletes = new HashMap<String, Athlete>();
         this.ConfigureMatArea();
         ANIMATION_STATE = STOPPED;
-        bo = this.getSize();
-        h = bo.height;
-        w = bo.width;
-        this.setBackground(mat_color);
+        screen_area_dimensions = this.getSize();
+        h = screen_area_dimensions.height;
+        w = screen_area_dimensions.width;
+        
+        
+        
+        
         this.addMouseListener(this);
         this.addMouseMotionListener(this);
         this.addKeyListener(this);
@@ -275,8 +286,14 @@ System.out.println(msg);
     @Override
     protected void paintComponent(Graphics g){
 
+        super.paintComponent(g);
+
+        // set background color
+        this.setBackground(mat_color);
+        
         Graphics2D g2 = (Graphics2D)g;
         g2.setStroke(smstr);
+       
         
         // Render Mats
         g2.setColor(mat_divider_color);
@@ -329,7 +346,7 @@ System.out.println(msg);
     
     private int mat_height;
     private int mat_width;
-    private Dimension bo; // mat bounds
+    private Dimension screen_area_dimensions; // mat bounds
     private int h;
     private int w;
     private Dimension matdimensions;
